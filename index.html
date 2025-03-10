@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoShop - Produits écologiques</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-leaf"></i>
+                <span>EcoShop</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="durabilite.html">Durabilité</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="panier.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <button class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Bannière principale -->
+    <section class="hero">
+        <div class="container">
+            <h1>Des produits écologiques pour un avenir durable</h1>
+            <p>Découvrez notre sélection de produits respectueux de l'environnement</p>
+            <div class="hero-buttons">
+                <a href="produits.html" class="btn btn-primary">Voir les produits</a>
+                <a href="durabilite.html" class="btn btn-outline">En savoir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produits vedettes -->
+    <section class="featured">
+        <div class="container">
+            <h2 class="section-title">Produits vedettes</h2>
+            <p class="section-subtitle">Notre sélection de produits écologiques populaires</p>
+            
+            <div class="products-grid" id="featured-products">
+                <!-- Les produits seront ajoutés dynamiquement via JavaScript -->
+            </div>
+            
+            <div class="center">
+                <a href="produits.html" class="btn btn-outline">Voir tous les produits</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Score de durabilité -->
+    <section class="sustainability">
+        <div class="container">
+            <div class="sustainability-content">
+                <div class="sustainability-text">
+                    <h2>Notre score de durabilité</h2>
+                    <p>Nous évaluons chaque produit selon plusieurs critères environnementaux pour vous aider à faire des choix éclairés.</p>
+                    <ul class="eco-list">
+                        <li><i class="fas fa-check"></i> Empreinte carbone</li>
+                        <li><i class="fas fa-check"></i> Matériaux recyclés</li>
+                        <li><i class="fas fa-check"></i> Emballage écologique</li>
+                        <li><i class="fas fa-check"></i> Production éthique</li>
+                    </ul>
+                    <a href="durabilite.html" class="btn btn-primary">En savoir plus</a>
+                </div>
+                <div class="sustainability-card">
+                    <h3>Guide de durabilité</h3>
+                    <div class="tabs">
+                        <div class="tab-buttons">
+                            <button class="tab-btn active" data-tab="materials">Matériaux</button>
+                            <button class="tab-btn" data-tab="carbon">Carbone</button>
+                            <button class="tab-btn" data-tab="packaging">Emballage</button>
+                            <button class="tab-btn" data-tab="ethics">Éthique</button>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-panel active" id="materials">
+                                <h4>Matériaux durables</h4>
+                                <p>Nous privilégions les produits fabriqués à partir de matériaux recyclés, biodégradables ou renouvelables.</p>
+                                <div class="score-list">
+                                    <div class="score-item">
+                                        <span>Matériaux recyclés</span>
+                                        <div class="score-bar">
+                                            <div class="score-fill" style="width: 90%"></div>
+                                        </div>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="score-item">
+                                        <span>Matériaux biodégradables</span>
+                                        <div class="score-bar">
+                                            <div class="score-fill" style="width: 75%"></div>
+                                        </div>
+                                        <span>75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-panel" id="carbon">
+                                <h4>Empreinte carbone</h4>
+                                <p>Nous évaluons l'empreinte carbone de chaque produit tout au long de son cycle de vie.</p>
+                                <div class="impact-scale">
+                                    <div class="impact-labels">
+                                        <span>Faible impact</span>
+                                        <span>Fort impact</span>
+                                    </div>
+                                    <div class="impact-bar"></div>
+                                </div>
+                            </div>
+                            <div class="tab-panel" id="packaging">
+                                <h4>Emballage écologique</h4>
+                                <p>Nous privilégions les produits avec un emballage minimal, recyclable ou biodégradable.</p>
+                                <div class="score-list">
+                                    <div class="score-item">
+                                        <span>Sans plastique</span>
+                                        <div class="score-bar">
+                                            <div class="score-fill" style="width: 85%"></div>
+                                        </div>
+                                        <span>85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-panel" id="ethics">
+                                <h4>Production éthique</h4>
+                                <p>Nous vérifions que les produits sont fabriqués dans des conditions de travail équitables.</p>
+                                <div class="score-list">
+                                    <div class="score-item">
+                                        <span>Commerce équitable</span>
+                                        <div class="score-bar">
+                                            <div class="score-fill" style="width: 95%"></div>
+                                        </div>
+                                        <span>95%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catégories -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Nos catégories</h2>
+            <div class="categories-grid">
+                <a href="produits.html?categorie=maison" class="category-card">
+                    <img src="https://via.placeholder.com/300" alt="Maison">
+                    <div class="category-overlay">
+                        <h3>Maison</h3>
+                    </div>
+                </a>
+                <a href="produits.html?categorie=mode" class="category-card">
+                    <img src="https://via.placeholder.com/300" alt="Mode éthique">
+                    <div class="category-overlay">
+                        <h3>Mode éthique</h3>
+                    </div>
+                </a>
+                <a href="produits.html?categorie=cosmetiques" class="category-card">
+                    <img src="https://via.placeholder.com/300" alt="Cosmétiques naturels">
+                    <div class="category-overlay">
+                        <h3>Cosmétiques naturels</h3>
+                    </div>
+                </a>
+                <a href="produits.html?categorie=alimentation" class="category-card">
+                    <img src="https://via.placeholder.com/300" alt="Alimentation bio">
+                    <div class="category-overlay">
+                        <h3>Alimentation bio</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Restez informé</h2>
+            <p>Inscrivez-vous à notre newsletter pour recevoir nos dernières nouveautés et conseils écologiques</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Votre adresse email" required>
+                <button type="submit" class="btn btn-primary">S'inscrire</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-leaf"></i>
+                    <span>EcoShop</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Produits</h3>
+                        <ul>
+                            <li><a href="#">Maison</a></li>
+                            <li><a href="#">Mode éthique</a></li>
+                            <li><a href="#">Cosmétiques naturels</a></li>
+                            <li><a href="#">Alimentation bio</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>À propos</h3>
+                        <ul>
+                            <li><a href="#">Notre mission</a></li>
+                            <li><a href="#">Durabilité</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Nous contacter</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Aide</h3>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Livraison</a></li>
+                            <li><a href="#">Retours</a></li>
+                            <li><a href="#">Mon compte</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 EcoShop. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Conditions d'utilisation</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
