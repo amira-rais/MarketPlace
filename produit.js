@@ -6,7 +6,7 @@ const products = [
     price: 24.99,
     category: "Maison",
     description: "Bouteille en acier inoxydable, sans BPA, idéale pour réduire les déchets plastiques.",
-    image: "https://via.placeholder.com/300",
+    image: "C:\Users\sanar\Desktop\leDernier\bouteille.jpg",
     sustainabilityScore: 95,
     featured: true
   },
