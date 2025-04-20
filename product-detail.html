@@ -57,13 +57,9 @@
         <!-- Product Images -->
         <div class="product-images">
           <div class="main-image">
-            <img src="./bouteille.jpg" alt="Bouteille réutilisable" id="main-product-image">
+            <img src="images/bouteille.jpg" alt="Bouteille réutilisable" id="main-product-image">
           </div>
-          <div class="thumbnail-images">
-            <img src="./bouteille.jpg" alt="Bouteille réutilisable" class="thumbnail active">
-            <img src="https://via.placeholder.com/150" alt="Bouteille réutilisable vue 2" class="thumbnail">
-            <img src="https://via.placeholder.com/150" alt="Bouteille réutilisable vue 3" class="thumbnail">
-          </div>
+          
         </div>
         
         <!-- Product Info -->
@@ -233,11 +229,151 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <!-- Same footer as in produits.html -->
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo-container">
+          <a href="index.html" class="footer-logo">
+            <i class="fas fa-leaf"></i> EcoShop
+          </a>
+          <p>Votre boutique en ligne de produits écologiques et durables.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="produits.html">Produits</a></li>
+              <li><a href="durabilite.html">Durabilité</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Catégories</h3>
+            <ul>
+              <li><a href="produits.html#maison">Maison</a></li>
+              <li><a href="produits.html#mode">Mode éthique</a></li>
+              <li><a href="produits.html#cosmetiques">Cosmétiques naturels</a></li>
+              <li><a href="produits.html#alimentation">Alimentation bio</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Mon compte</h3>
+            <ul>
+              <li><a href="#" id="footer-account">Mon profil</a></li>
+              <li><a href="#">Mes commandes</a></li>
+              <li><a href="#">Ma liste d'envies</a></li>
+              <li><a href="#">Aide</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-social">
+          <h3>Suivez-nous</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 EcoShop. Tous droits réservés.</p>
+        <div class="footer-legal">
+          <a href="#">Conditions générales</a>
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">Mentions légales</a>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <!-- Modals -->
-  <!-- Same modals as in produits.html -->
+  <!-- Login Modal -->
+  <div class="modal" id="login-modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Mon compte</h2>
+      <div class="modal-tabs">
+        <button class="modal-tab active" data-tab="login">Connexion</button>
+        <button class="modal-tab" data-tab="register">Inscription</button>
+      </div>
+      <div class="modal-panel active" id="login-panel">
+        <form id="login-form">
+          <div class="form-group">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" required>
+          </div>
+          <div class="form-group">
+            <label for="login-password">Mot de passe</label>
+            <input type="password" id="login-password" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Se connecter</button>
+          <div class="form-footer">
+            <a href="#" class="forgot-password">Mot de passe oublié ?</a>
+          </div>
+        </form>
+      </div>
+      <div class="modal-panel" id="register-panel">
+        <form id="register-form">
+          <div class="form-group">
+            <label for="register-name">Nom complet</label>
+            <input type="text" id="register-name" required>
+          </div>
+          <div class="form-group">
+            <label for="register-email">Email</label>
+            <input type="email" id="register-email" required>
+          </div>
+          <div class="form-group">
+            <label for="register-password">Mot de passe</label>
+            <input type="password" id="register-password" required>
+          </div>
+          <div class="form-group">
+            <label for="register-confirm">Confirmer le mot de passe</label>
+            <input type="password" id="register-confirm" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">S'inscrire</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Modal -->
+  <div class="modal" id="cart-modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Mon panier</h2>
+      <div id="cart-empty">
+        <p>Votre panier est vide.</p>
+        <a href="produits.html" class="btn btn-outline">Découvrir nos produits</a>
+      </div>
+      <div id="cart-items"></div>
+      <div id="cart-summary" class="hidden">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cart-total-price">0.00 €</span>
+        </div>
+        <div class="cart-actions">
+          <button id="clear-cart" class="btn btn-outline">Vider le panier</button>
+          <button id="checkout" class="btn btn-primary">Commander</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="search-overlay">
+    <div class="search-container">
+      <div class="search-header">
+        <h2>Rechercher</h2>
+        <button class="close-search">&times;</button>
+      </div>
+      <div class="search-form">
+        <input type="text" id="search-input" placeholder="Que recherchez-vous ?">
+        <button id="search-button"><i class="fas fa-search"></i></button>
+      </div>
+      <div id="search-results"></div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
   <script src="product-detail.js"></script>
