@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Détail du produit - EcoShop</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="product-detail.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-leaf"></i>
+        <span>EcoShop</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a href="durabilite.html">Durabilité</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-icons">
+        <a href="#" id="search-icon"><i class="fas fa-search"></i></a>
+        <a href="#" id="profile-icon"><i class="fas fa-user"></i></a>
+        <a href="#" id="cart-icon" class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </a>
+        <button class="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+      <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <section class="breadcrumb">
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li>Détail du produit</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Product Detail -->
+  <section class="product-detail">
+    <div class="container">
+      <div class="product-detail-layout">
+        <!-- Product Images -->
+        <div class="product-images">
+          <div class="main-image">
+            <img src="./bouteille.jpg" alt="Bouteille réutilisable" id="main-product-image">
+          </div>
+          <div class="thumbnail-images">
+            <img src="./bouteille.jpg" alt="Bouteille réutilisable" class="thumbnail active">
+            <img src="https://via.placeholder.com/150" alt="Bouteille réutilisable vue 2" class="thumbnail">
+            <img src="https://via.placeholder.com/150" alt="Bouteille réutilisable vue 3" class="thumbnail">
+          </div>
+        </div>
+        
+        <!-- Product Info -->
+        <div class="product-info">
+          <div class="product-header">
+            <span class="product-category">Maison</span>
+            <h1 class="product-title">Bouteille réutilisable</h1>
+            <div class="product-price">24,99 €</div>
+            
+            <div class="product-meta">
+              <div class="availability in-stock">
+                <i class="fas fa-check-circle"></i> En stock (15 disponibles)
+              </div>
+              <div class="sustainability-score">
+                <span class="score-label">Durabilité:</span>
+                <div class="score-bar">
+                  <div class="score-fill score-excellent" style="width: 95%"></div>
+                </div>
+                <span class="score-value">95</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="product-description">
+            <p>Bouteille en acier inoxydable, sans BPA, idéale pour réduire les déchets plastiques.</p>
+          </div>
+          
+          <form class="add-to-cart-form">
+            <div class="quantity-selector">
+              <button type="button" class="quantity-btn decrease">-</button>
+              <input type="number" id="product-quantity" value="1" min="1" max="15">
+              <button type="button" class="quantity-btn increase">+</button>
+            </div>
+            <button type="submit" class="btn btn-primary add-to-cart-btn">
+              <i class="fas fa-shopping-cart"></i> Ajouter au panier
+            </button>
+          </form>
+          
+          <div class="product-actions">
+            <a href="produits.html" class="btn btn-outline">
+              <i class="fas fa-arrow-left"></i> Retour aux produits
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Product Tabs -->
+      <div class="product-tabs">
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="description">Description</button>
+          <button class="tab-btn" data-tab="specifications">Spécifications</button>
+          <button class="tab-btn" data-tab="reviews">Avis</button>
+        </div>
+        
+        <div class="tab-panels">
+          <div class="tab-panel active" id="description">
+            <h3>Description détaillée</h3>
+            <p>Cette bouteille réutilisable en acier inoxydable est le compagnon idéal pour vos déplacements quotidiens. Fabriquée à partir de matériaux de haute qualité, elle est conçue pour durer tout en réduisant votre impact environnemental.</p>
+            <ul>
+              <li>Capacité: 750ml</li>
+              <li>Matériau: Acier inoxydable 18/8 de qualité alimentaire</li>
+              <li>Sans BPA, sans phtalates et sans produits chimiques nocifs</li>
+              <li>Double paroi isolante pour garder les boissons chaudes ou froides pendant des heures</li>
+              <li>Bouchon étanche à vis</li>
+              <li>Facile à nettoyer, compatible lave-vaisselle (partie supérieure seulement)</li>
+            </ul>
+          </div>
+          
+          <div class="tab-panel" id="specifications">
+            <h3>Spécifications techniques</h3>
+            <table>
+              <tr>
+                <th>Matériau</th>
+                <td>Acier inoxydable 18/8</td>
+              </tr>
+              <tr>
+                <th>Capacité</th>
+                <td>750 ml</td>
+              </tr>
+              <tr>
+                <th>Dimensions</th>
+                <td>24 cm x 7 cm (H x Ø)</td>
+              </tr>
+              <tr>
+                <th>Poids</th>
+                <td>350 g</td>
+              </tr>
+              <tr>
+                <th>Isolation</th>
+                <td>Double paroi sous vide</td>
+              </tr>
+              <tr>
+                <th>Origine</th>
+                <td>Fabriqué en France</td>
+              </tr>
+            </table>
+          </div>
+          
+          <div class="tab-panel" id="reviews">
+            <h3>Avis clients</h3>
+            <div class="reviews-list">
+              <div class="review">
+                <div class="review-header">
+                  <div class="review-author">Sophie M.</div>
+                  <div class="review-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <div class="review-content">
+                  <p>J'utilise cette bouteille tous les jours depuis 6 mois et elle est comme neuve. Elle garde vraiment l'eau fraîche toute la journée. Je recommande!</p>
+                </div>
+              </div>
+              
+              <div class="review">
+                <div class="review-header">
+                  <div class="review-author">Thomas L.</div>
+                  <div class="review-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+                <div class="review-content">
+                  <p>Très satisfait de mon achat. La seule petite critique serait que le bouchon pourrait être un peu plus facile à ouvrir.</p>
+                </div>
+              </div>
+            </div>
+            
+            <form class="review-form">
+              <h4>Donnez votre avis</h4>
+              <div class="form-group">
+                <label for="review-rating">Note</label>
+                <div class="rating-stars">
+                  <i class="far fa-star" data-rating="1"></i>
+                  <i class="far fa-star" data-rating="2"></i>
+                  <i class="far fa-star" data-rating="3"></i>
+                  <i class="far fa-star" data-rating="4"></i>
+                  <i class="far fa-star" data-rating="5"></i>
+                </div>
+                <input type="hidden" id="review-rating" name="rating" value="0">
+              </div>
+              <div class="form-group">
+                <label for="review-comment">Commentaire</label>
+                <textarea id="review-comment" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Envoyer l'avis</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Related Products -->
+      <div class="related-products">
+        <h2>Produits similaires</h2>
+        <div class="products-grid" id="related-products">
+          <!-- Will be populated by JavaScript -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- Same footer as in produits.html -->
+  </footer>
+
+  <!-- Modals -->
+  <!-- Same modals as in produits.html -->
+
+  <script src="script.js"></script>
+  <script src="product-detail.js"></script>
+</body>
+</html>

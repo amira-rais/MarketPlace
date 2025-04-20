@@ -6,7 +6,7 @@ const products = [
     price: 24.99,
     category: "Maison",
     description: "Bouteille en acier inoxydable, sans BPA, idéale pour réduire les déchets plastiques.",
-    image: "C:\Users\sanar\Desktop\leDernier\bouteille.jpg",
+    image: "images/bouteille.jpg",
     sustainabilityScore: 95,
     featured: true
   },
@@ -16,7 +16,7 @@ const products = [
     price: 29.99,
     category: "Mode éthique",
     description: "T-shirt fabriqué en coton biologique certifié, teint avec des colorants naturels.",
-    image: "https://via.placeholder.com/300",
+    image: "images/t-shirt1.jpg",
     sustainabilityScore: 85,
     featured: true
   },
@@ -26,7 +26,7 @@ const products = [
     price: 8.99,
     category: "Cosmétiques naturels",
     description: "Savon artisanal fabriqué à partir d'ingrédients naturels et biologiques, sans emballage plastique.",
-    image: "https://via.placeholder.com/300",
+    image: "images/savon-solide.jpg",
     sustainabilityScore: 90,
     featured: true
   },
@@ -36,7 +36,7 @@ const products = [
     price: 12.99,
     category: "Mode éthique",
     description: "Sac en coton biologique robuste et durable, parfait pour remplacer les sacs plastiques.",
-    image: "https://via.placeholder.com/300",
+    image: "images/sac1.jpg",
     sustainabilityScore: 88,
     featured: true
   },
@@ -46,7 +46,7 @@ const products = [
     price: 6.99,
     category: "Maison",
     description: "Brosse à dents écologique avec manche en bambou biodégradable et poils recyclables.",
-    image: "https://via.placeholder.com/300",
+    image: "images/brosse-a-dents.jpg",
     sustainabilityScore: 92,
     featured: false
   },
@@ -56,7 +56,7 @@ const products = [
     price: 11.99,
     category: "Cosmétiques naturels",
     description: "Shampoing solide sans sulfates ni parabens, emballage zéro déchet.",
-    image: "https://via.placeholder.com/300",
+    image: "images/shampoing.jpg",
     sustainabilityScore: 94,
     featured: false
   },
@@ -66,7 +66,7 @@ const products = [
     price: 59.99,
     category: "Mode éthique",
     description: "Sac à dos fabriqué à partir de bouteilles plastiques recyclées, résistant à l'eau.",
-    image: "https://via.placeholder.com/300",
+    image: "images/sac3.jpg",
     sustainabilityScore: 87,
     featured: false
   },
@@ -76,7 +76,7 @@ const products = [
     price: 14.99,
     category: "Maison",
     description: "Lot de 6 pailles en acier inoxydable avec brosse de nettoyage, alternative durable aux pailles jetables.",
-    image: "https://via.placeholder.com/300",
+    image: "images/paille.jpg",
     sustainabilityScore: 89,
     featured: false
   },
@@ -86,7 +86,7 @@ const products = [
     price: 9.99,
     category: "Alimentation bio",
     description: "Café issu de l'agriculture biologique et du commerce équitable, torréfié artisanalement pour préserver ses arômes.",
-    image: "https://via.placeholder.com/300",
+    image: "images/café.jpg",
     sustainabilityScore: 91,
     featured: false
   },
@@ -96,7 +96,7 @@ const products = [
     price: 18.99,
     category: "Maison",
     description: "Alternative écologique au film plastique, fabriquée à partir de coton bio et de cire d'abeille.",
-    image: "https://via.placeholder.com/300",
+    image: "images/beeswrap.jpg",
     sustainabilityScore: 93,
     featured: false
   },
@@ -106,7 +106,7 @@ const products = [
     price: 22.99,
     category: "Cosmétiques naturels",
     description: "Crème hydratante à base d'ingrédients naturels et biologiques, sans conservateurs chimiques.",
-    image: "https://via.placeholder.com/300",
+    image: "images/crème.jpg",
     sustainabilityScore: 86,
     featured: false
   },
@@ -116,7 +116,7 @@ const products = [
     price: 7.99,
     category: "Alimentation bio",
     description: "Thé vert cultivé sans pesticides, riche en antioxydants et conditionné dans un emballage compostable.",
-    image: "https://via.placeholder.com/300",
+    image: "images/thé.jpg",
     sustainabilityScore: 90,
     featured: false
   },
@@ -127,7 +127,7 @@ const products = [
     price: 19.99,
     category: "Maison",
     description: "Gourde pliable en silicone alimentaire, sans BPA, pratique pour les déplacements.",
-    image: "https://via.placeholder.com/300",
+    image: "images/gourde.jpg",
     sustainabilityScore: 88,
     featured: false
   },
@@ -137,7 +137,7 @@ const products = [
     price: 12.99,
     category: "Mode éthique",
     description: "Chaussettes fabriquées à partir de fibres de bambou, naturellement antibactériennes et respirantes.",
-    image: "https://via.placeholder.com/300",
+    image: "images/chaussettes.jpg",
     sustainabilityScore: 85,
     featured: false
   },
@@ -147,7 +147,7 @@ const products = [
     price: 8.49,
     category: "Cosmétiques naturels",
     description: "Dentifrice solide naturel, sans emballage plastique, pour une hygiène bucco-dentaire écologique.",
-    image: "https://via.placeholder.com/300",
+    image: "images/dentifrice.jpg",
     sustainabilityScore: 92,
     featured: false
   },
@@ -157,7 +157,7 @@ const products = [
     price: 4.99,
     category: "Alimentation bio",
     description: "Chocolat noir 70% issu de l'agriculture biologique et du commerce équitable.",
-    image: "https://via.placeholder.com/300",
+    image: "images/chocolat.jpg",
     sustainabilityScore: 89,
     featured: false
   },
@@ -167,7 +167,7 @@ const products = [
     price: 7.99,
     category: "Maison",
     description: "Éponge lavable et réutilisable en fibres naturelles, alternative durable aux éponges jetables.",
-    image: "https://via.placeholder.com/300",
+    image: "images/eponge.jpg",
     sustainabilityScore: 91,
     featured: false
   },
@@ -177,7 +177,7 @@ const products = [
     price: 34.99,
     category: "Mode éthique",
     description: "Écharpe chaude et douce fabriquée à partir de laine recyclée, teinte avec des colorants naturels.",
-    image: "https://via.placeholder.com/300",
+    image: "images/echape.jpg",
     sustainabilityScore: 87,
     featured: false
   },
@@ -187,7 +187,7 @@ const products = [
     price: 9.99,
     category: "Cosmétiques naturels",
     description: "Déodorant naturel sans aluminium ni parabens, efficace et respectueux de la peau.",
-    image: "https://via.placeholder.com/300",
+    image: "images/déodorant.jpg",
     sustainabilityScore: 90,
     featured: false
   },
@@ -197,7 +197,7 @@ const products = [
     price: 12.99,
     category: "Alimentation bio",
     description: "Miel de forêt issu de l'apiculture biologique, récolté dans des zones préservées.",
-    image: "https://via.placeholder.com/300",
+    image: "images/miel.jpg",
     sustainabilityScore: 93,
     featured: false
   },
@@ -207,7 +207,7 @@ const products = [
     price: 15.99,
     category: "Maison",
     description: "Set de couverts en bambou réutilisables, légers et pratiques pour les déplacements.",
-    image: "https://via.placeholder.com/300",
+    image: "images/couverts.jpg",
     sustainabilityScore: 89,
     featured: false
   },
@@ -217,7 +217,7 @@ const products = [
     price: 79.99,
     category: "Mode éthique",
     description: "Baskets fabriquées à partir de matériaux recyclés et de caoutchouc naturel.",
-    image: "https://via.placeholder.com/300",
+    image: "images/baskets.jpg",
     sustainabilityScore: 86,
     featured: false
   },
@@ -227,7 +227,7 @@ const products = [
     price: 8.99,
     category: "Cosmétiques naturels",
     description: "Huile de coco vierge biologique, polyvalente pour la cuisine et les soins corporels.",
-    image: "https://via.placeholder.com/300",
+    image: "images/huile.jpg",
     sustainabilityScore: 92,
     featured: false
   },
@@ -237,7 +237,7 @@ const products = [
     price: 3.49,
     category: "Alimentation bio",
     description: "Pâtes complètes issues de l'agriculture biologique, riches en fibres et en nutriments.",
-    image: "https://via.placeholder.com/300",
+    image: "images/pates.jpg",
     sustainabilityScore: 88,
     featured: false
   }
@@ -297,11 +297,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const loginForm = document.getElementById('login-form');
   const registerForm = document.getElementById('register-form');
   const addToCartForm = document.getElementById('add-to-cart-form');
+  const contactForm = document.getElementById('contact-form');
+  const newsletterForm = document.querySelector('.newsletter-form');
 
   // Éléments spécifiques à la page
   const featuredProductsContainer = document.getElementById('featured-products');
   const tabButtons = document.querySelectorAll('.tab-btn');
-  const newsletterForm = document.querySelector('.newsletter-form');
+  const faqItems = document.querySelectorAll('.faq-item');
+  const barFills = document.querySelectorAll('.bar-fill');
 
   // Éléments de la page produits
   const priceRange = document.getElementById('price-range');
@@ -352,6 +355,16 @@ document.addEventListener('DOMContentLoaded', function() {
       loadCategoryProducts('mode', 'Mode éthique');
       loadCategoryProducts('cosmetiques', 'Cosmétiques naturels');
       loadCategoryProducts('alimentation', 'Alimentation bio');
+    }
+    
+    // Initialiser la FAQ
+    if (faqItems.length > 0) {
+      setupFAQ();
+    }
+    
+    // Initialiser les graphiques de durabilité
+    if (barFills.length > 0) {
+      animateChartBars();
     }
   }
 
@@ -457,6 +470,26 @@ document.addEventListener('DOMContentLoaded', function() {
           this.classList.add('active');
           document.getElementById(tabId).classList.add('active');
         });
+      });
+    }
+    
+    // Formulaire de contact
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Récupérer les valeurs du formulaire
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+        const newsletter = document.getElementById('newsletter').checked;
+        
+        // Simuler l'envoi du formulaire
+        showNotification('Votre message a été envoyé avec succès!');
+        
+        // Réinitialiser le formulaire
+        contactForm.reset();
       });
     }
     
@@ -621,6 +654,42 @@ document.addEventListener('DOMContentLoaded', function() {
         closeModal(cartModal);
       });
     }
+  }
+
+  function setupFAQ() {
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      const toggle = item.querySelector('.faq-toggle');
+      const answer = item.querySelector('.faq-answer');
+      
+      question.addEventListener('click', function() {
+        // Fermer tous les autres éléments
+        faqItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            otherItem.querySelector('.faq-answer').classList.remove('active');
+            otherItem.querySelector('.faq-toggle').classList.remove('active');
+          }
+        });
+        
+        // Basculer l'état actuel
+        answer.classList.toggle('active');
+        toggle.classList.toggle('active');
+      });
+    });
+  }
+
+  function animateChartBars() {
+    // Initialiser les barres à hauteur zéro
+    barFills.forEach(bar => {
+      const targetHeight = bar.style.height;
+      bar.style.height = '0%';
+      
+      // Animation des barres
+      setTimeout(() => {
+        bar.style.transition = 'height 1s ease-out';
+        bar.style.height = targetHeight;
+      }, 300);
+    });
   }
 
   function loadFeaturedProducts() {
@@ -1069,17 +1138,33 @@ document.addEventListener('DOMContentLoaded', function() {
     notification.className = `notification ${type}`;
     notification.textContent = message;
     
+    // Styles
+    notification.style.position = 'fixed';
+    notification.style.bottom = '20px';
+    notification.style.right = '20px';
+    notification.style.backgroundColor = type === 'error' ? 'var(--error)' : 'var(--primary)';
+    notification.style.color = 'white';
+    notification.style.padding = '10px 20px';
+    notification.style.borderRadius = 'var(--radius)';
+    notification.style.boxShadow = 'var(--shadow)';
+    notification.style.zIndex = '1000';
+    notification.style.opacity = '0';
+    notification.style.transform = 'translateY(20px)';
+    notification.style.transition = 'opacity 0.3s, transform 0.3s';
+    
     // Ajouter au DOM
     document.body.appendChild(notification);
     
-    // Afficher la notification
+    // Déclencher l'animation
     setTimeout(() => {
-      notification.classList.add('show');
+      notification.style.opacity = '1';
+      notification.style.transform = 'translateY(0)';
     }, 10);
     
     // Supprimer après 3 secondes
     setTimeout(() => {
-      notification.classList.remove('show');
+      notification.style.opacity = '0';
+      notification.style.transform = 'translateY(20px)';
       
       setTimeout(() => {
         document.body.removeChild(notification);
@@ -1412,4 +1497,13 @@ document.addEventListener('DOMContentLoaded', function() {
     if (score >= 50) return 'score-average';
     return 'score-poor';
   }
+  // Add this inside your existing DOMContentLoaded event
+window.addEventListener('hashchange', () => {
+  const activeCategory = window.location.hash.substring(1); // Gets #maison → "maison"
+  document.querySelectorAll('.category-section').forEach(section => {
+    section.style.borderLeft = section.id === activeCategory 
+      ? '3px solid green' 
+      : 'none';
+  });
+}); 
 });

@@ -1,283 +1,514 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - EcoShop</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - EcoShop</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <i class="fas fa-leaf"></i>
-                <span>EcoShop</span>
-            </a>
-            <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="produits.html">Produits</a></li>
-                <li><a href="durabilite.html">Durabilité</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-leaf"></i> EcoShop
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a href="durabilite.html">Durabilité</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-icons">
+        <button class="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
+        <a href="#" id="search-icon">
+          <i class="fas fa-search"></i>
+        </a>
+        <a href="#" id="profile-icon">
+          <i class="fas fa-user"></i>
+        </a>
+        <a href="#" id="cart-icon" class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </a>
+        <button class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Contactez-nous</h1>
+      <p>Nous sommes là pour répondre à toutes vos questions et vous aider dans votre démarche éco-responsable.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section>
+    <div class="container">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>Nos informations</h2>
+          <p>N'hésitez pas à nous contacter par téléphone, email ou en remplissant le formulaire ci-contre.</p>
+          
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Adresse</h3>
+              <p>123 Rue de l'Écologie<br>75001 Paris, France</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h3>Téléphone</h3>
+              <p>+33 1 23 45 67 89</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <p>contact@ecoshop.com</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h3>Horaires</h3>
+              <p>Lun-Ven: 9h-18h<br>Sam: 10h-16h</p>
+            </div>
+          </div>
+          
+          <div class="social-contact">
+            <h3>Suivez-nous</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form-container">
+          <h2>Envoyez-nous un message</h2>
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Nom complet</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Sujet</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Envoyer le message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map-section">
+    <div class="container">
+      <h2 class="section-title">Nous trouver</h2>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.142047342144!2d2.3354330157606347!3d48.87456857928884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e38f817b573%3A0x48d69c30470e7aeb!2sOp%C3%A9ra%20Garnier!5e0!3m2!1sfr!2sfr!4v1650000000000!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <h2 class="section-title">Questions fréquentes</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Comment puis-je suivre ma commande ?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Vous pouvez suivre votre commande en vous connectant à votre compte et en accédant à la section "Mes commandes". Vous y trouverez toutes les informations concernant le statut de votre livraison.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Quels sont les délais de livraison ?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Nos délais de livraison varient entre 2 et 5 jours ouvrés pour la France métropolitaine. Pour les livraisons internationales, comptez entre 5 et 10 jours ouvrés selon la destination.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Comment retourner un produit ?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Vous disposez de 14 jours pour retourner un produit. Connectez-vous à votre compte, accédez à la section "Mes commandes", sélectionnez la commande concernée et suivez les instructions pour effectuer un retour.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Vos produits sont-ils tous écologiques ?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Oui, tous nos produits sont sélectionnés selon des critères stricts de durabilité et d'impact environnemental. Nous évaluons chaque produit sur sa fabrication, ses matériaux, son emballage et sa fin de vie.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>Restez informé</h2>
+      <p>Inscrivez-vous à notre newsletter pour recevoir nos dernières actualités et offres spéciales.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Votre adresse email" required>
+        <button type="submit" class="btn btn-primary">S'inscrire</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo-container">
+          <a href="index.html" class="footer-logo">
+            <i class="fas fa-leaf"></i> EcoShop
+          </a>
+          <p>Votre boutique en ligne de produits écologiques et durables.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="produits.html">Produits</a></li>
+              <li><a href="durabilite.html">Durabilité</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="nav-icons">
-                <a href="#"><i class="fas fa-search"></i></a>
-                <a href="#"><i class="fas fa-user"></i></a>
-                <a href="panier.html" class="cart-icon">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span class="cart-count">0</span>
-                </a>
-                <button class="theme-toggle">
-                    <i class="fas fa-moon"></i>
-                </button>
-            </div>
-            <button class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
+          </div>
+          <div class="footer-column">
+            <h3>Catégories</h3>
+            <ul>
+              <li><a href="produits.html">Maison</a></li>
+              <li><a href="produits.html">Mode éthique</a></li>
+              <li><a href="produits.html">Cosmétiques naturels</a></li>
+              <li><a href="produits.html">Alimentation bio</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Mon compte</h3>
+            <ul>
+              <li><a href="#" id="footer-account">Mon profil</a></li>
+              <li><a href="#">Mes commandes</a></li>
+              <li><a href="#">Ma liste d'envies</a></li>
+              <li><a href="#">Aide</a></li>
+            </ul>
+          </div>
         </div>
-    </nav>
-
-    <!-- En-tête de la page contact -->
-    <section class="contact-header">
-        <div class="container">
-            <h1>Contactez-nous</h1>
-            <p>Nous sommes là pour répondre à vos questions et vous aider dans votre démarche écologique</p>
+        <div class="footer-social">
+          <h3>Suivez-nous</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
         </div>
-    </section>
-
-    <!-- Contenu principal -->
-    <section class="contact-content">
-        <div class="container">
-            <div class="contact-layout">
-                <!-- Formulaire de contact -->
-                <div class="contact-form-container">
-                    <h2>Envoyez-nous un message</h2>
-                    <form class="contact-form" id="contact-form">
-                        <div class="form-group">
-                            <label for="name">Nom complet</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Adresse email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Sujet</label>
-                            <select id="subject" name="subject" required>
-                                <option value="">Sélectionnez un sujet</option>
-                                <option value="question">Question sur un produit</option>
-                                <option value="order">Suivi de commande</option>
-                                <option value="return">Retour ou remboursement</option>
-                                <option value="suggestion">Suggestion</option>
-                                <option value="other">Autre</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="6" required></textarea>
-                        </div>
-                        <div class="form-group checkbox-group">
-                            <input type="checkbox" id="newsletter" name="newsletter">
-                            <label for="newsletter">Je souhaite m'inscrire à la newsletter</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
-                    </form>
-                </div>
-                
-                <!-- Informations de contact -->
-                <div class="contact-info">
-                    <div class="info-card">
-                        <h3>Nos coordonnées</h3>
-                        <ul class="info-list">
-                            <li>
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div>
-                                    <span>Adresse</span>
-                                    <p>123 Rue de l'Écologie, 75001 Paris, France</p>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-phone-alt"></i>
-                                <div>
-                                    <span>Téléphone</span>
-                                    <p>+33 1 23 45 67 89</p>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-envelope"></i>
-                                <div>
-                                    <span>Email</span>
-                                    <p>contact@ecoshop.fr</p>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-clock"></i>
-                                <div>
-                                    <span>Horaires d'ouverture</span>
-                                    <p>Lun - Ven: 9h - 18h<br>Sam: 10h - 16h</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="social-card">
-                        <h3>Suivez-nous</h3>
-                        <p>Restez connecté avec nous sur les réseaux sociaux pour découvrir nos dernières actualités et promotions</p>
-                        <div class="social-links">
-                            <a href="#" class="social-link">
-                                <i class="fab fa-facebook-f"></i>
-                                <span>Facebook</span>
-                            </a>
-                            <a href="#" class="social-link">
-                                <i class="fab fa-instagram"></i>
-                                <span>Instagram</span>
-                            </a>
-                            <a href="#" class="social-link">
-                                <i class="fab fa-twitter"></i>
-                                <span>Twitter</span>
-                            </a>
-                            <a href="#" class="social-link">
-                                <i class="fab fa-pinterest"></i>
-                                <span>Pinterest</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 EcoShop. Tous droits réservés.</p>
+        <div class="footer-legal">
+          <a href="#">Conditions générales</a>
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">Mentions légales</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </footer>
 
-    <!-- FAQ -->
-    <section class="faq">
-        <div class="container">
-            <h2 class="section-title">Questions fréquentes</h2>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Comment suivre ma commande ?</h3>
-                        <button class="faq-toggle"><i class="fas fa-plus"></i></button>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Vous pouvez suivre votre commande en vous connectant à votre compte client et en accédant à la section "Mes commandes". Vous y trouverez le numéro de suivi et l'état actuel de votre commande.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Quels sont les délais de livraison ?</h3>
-                        <button class="faq-toggle"><i class="fas fa-plus"></i></button>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Les délais de livraison varient en fonction de votre localisation. En général, les commandes sont livrées dans un délai de 2 à 5 jours ouvrables en France métropolitaine. Pour les autres destinations, veuillez consulter notre page de livraison pour plus d'informations.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Comment retourner un produit ?</h3>
-                        <button class="faq-toggle"><i class="fas fa-plus"></i></button>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Vous disposez de 14 jours à compter de la réception de votre commande pour retourner un produit. Pour initier un retour, connectez-vous à votre compte client et suivez les instructions dans la section "Mes commandes". Assurez-vous que le produit est dans son état d'origine et dans son emballage d'origine.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Comment fonctionne le score de durabilité ?</h3>
-                        <button class="faq-toggle"><i class="fas fa-plus"></i></button>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Notre score de durabilité est calculé en évaluant chaque produit selon quatre critères : les matériaux utilisés, l'empreinte carbone, l'emballage et les conditions de production. Chaque produit reçoit une note sur 100, ce qui vous permet de comparer facilement différents produits. Pour plus d'informations, consultez notre page sur la durabilité.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Proposez-vous des réductions pour les achats en gros ?</h3>
-                        <button class="faq-toggle"><i class="fas fa-plus"></i></button>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Oui, nous proposons des tarifs spéciaux pour les achats en gros et les commandes professionnelles. Veuillez nous contacter directement par email à pro@ecoshop.fr pour discuter de vos besoins et obtenir un devis personnalisé.</p>
-                    </div>
-                </div>
-            </div>
+  <!-- Modals -->
+  <!-- Login Modal -->
+  <div class="modal" id="login-modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Mon compte</h2>
+      <div class="modal-tabs">
+        <button class="modal-tab active" data-tab="login">Connexion</button>
+        <button class="modal-tab" data-tab="register">Inscription</button>
+      </div>
+      <div class="modal-panel active" id="login-panel">
+        <form id="login-form">
+          <div class="form-group">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" required>
+          </div>
+          <div class="form-group">
+            <label for="login-password">Mot de passe</label>
+            <input type="password" id="login-password" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Se connecter</button>
+          <div class="form-footer">
+            <a href="#" class="forgot-password">Mot de passe oublié ?</a>
+          </div>
+        </form>
+      </div>
+      <div class="modal-panel" id="register-panel">
+        <form id="register-form">
+          <div class="form-group">
+            <label for="register-name">Nom complet</label>
+            <input type="text" id="register-name" required>
+          </div>
+          <div class="form-group">
+            <label for="register-email">Email</label>
+            <input type="email" id="register-email" required>
+          </div>
+          <div class="form-group">
+            <label for="register-password">Mot de passe</label>
+            <input type="password" id="register-password" required>
+          </div>
+          <div class="form-group">
+            <label for="register-confirm">Confirmer le mot de passe</label>
+            <input type="password" id="register-confirm" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">S'inscrire</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Modal -->
+  <div class="modal" id="cart-modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Mon panier</h2>
+      <div id="cart-empty">
+        <p>Votre panier est vide.</p>
+        <a href="produits.html" class="btn btn-outline">Découvrir nos produits</a>
+      </div>
+      <div id="cart-items"></div>
+      <div id="cart-summary" class="hidden">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cart-total-price">0.00 €</span>
         </div>
-    </section>
-
-    <!-- Newsletter -->
-    <section class="newsletter">
-        <div class="container">
-            <h2>Restez informé</h2>
-            <p>Inscrivez-vous à notre newsletter pour recevoir nos dernières nouveautés et conseils écologiques</p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Votre adresse email" required>
-                <button type="submit" class="btn btn-primary">S'inscrire</button>
-            </form>
+        <div class="cart-actions">
+          <button id="clear-cart" class="btn btn-outline">Vider le panier</button>
+          <button id="checkout" class="btn btn-primary">Commander</button>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <i class="fas fa-leaf"></i>
-                    <span>EcoShop</span>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h3>Produits</h3>
-                        <ul>
-                            <li><a href="#">Maison</a></li>
-                            <li><a href="#">Mode éthique</a></li>
-                            <li><a href="#">Cosmétiques naturels</a></li>
-                            <li><a href="#">Alimentation bio</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h3>À propos</h3>
-                        <ul>
-                            <li><a href="#">Notre mission</a></li>
-                            <li><a href="#">Durabilité</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Nous contacter</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h3>Aide</h3>
-                        <ul>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Livraison</a></li>
-                            <li><a href="#">Retours</a></li>
-                            <li><a href="#">Mon compte</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-social">
-                    <h3>Suivez-nous</h3>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 EcoShop. Tous droits réservés.</p>
-                <div class="footer-legal">
-                    <a href="#">Mentions légales</a>
-                    <a href="#">Politique de confidentialité</a>
-                    <a href="#">Conditions d'utilisation</a>
-                </div>
-            </div>
+  <!-- Profile Modal -->
+  <div class="modal" id="profile-modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div id="profile-logged-in" class="hidden">
+        <div class="profile-header">
+          <div class="profile-avatar">
+            <i class="fas fa-user-circle"></i>
+          </div>
+          <div class="profile-name">
+            <h3 id="profile-name-display">Nom d'utilisateur</h3>
+            <p id="profile-email-display">email@example.com</p>
+          </div>
         </div>
-    </footer>
+        <div class="profile-menu">
+          <a href="#" class="profile-menu-item">
+            <i class="fas fa-shopping-bag"></i>
+            <span>Mes commandes</span>
+          </a>
+          <a href="#" class="profile-menu-item">
+            <i class="fas fa-heart"></i>
+            <span>Ma liste d'envies</span>
+          </a>
+          <a href="#" class="profile-menu-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Mes adresses</span>
+          </a>
+          <a href="#" class="profile-menu-item">
+            <i class="fas fa-cog"></i>
+            <span>Paramètres du compte</span>
+          </a>
+          <a href="#" id="logout-btn" class="profile-menu-item">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Déconnexion</span>
+          </a>
+        </div>
+      </div>
+      <div id="profile-logged-out">
+        <h2>Mon compte</h2>
+        <p>Connectez-vous pour accéder à votre compte et gérer vos commandes.</p>
+        <button class="btn btn-primary btn-block" onclick="showLoginModal()">Se connecter</button>
+        <div class="profile-register">
+          <p>Vous n'avez pas de compte ? <a href="#" onclick="showRegisterTab()">Inscrivez-vous</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script src="script.js"></script>
-    <script src="contact.js"></script>
+  <!-- Add to Cart Modal -->
+  <div class="modal" id="add-to-cart-modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Ajouter au panier</h2>
+      <div id="add-to-cart-product-info"></div>
+      <form id="add-to-cart-form">
+        <div class="form-group">
+          <label for="product-quantity">Quantité</label>
+          <div class="quantity-selector">
+            <button type="button" id="decrease-quantity" class="quantity-btn">-</button>
+            <input type="number" id="product-quantity" value="1" min="1" max="10">
+            <button type="button" id="increase-quantity" class="quantity-btn">+</button>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="product-notes">Notes spéciales (optionnel)</label>
+          <textarea id="product-notes" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Ajouter au panier</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="search-overlay">
+    <div class="search-container">
+      <div class="search-header">
+        <h2>Rechercher</h2>
+        <button class="close-search">&times;</button>
+      </div>
+      <div class="search-form">
+        <input type="text" id="search-input" placeholder="Que recherchez-vous ?">
+        <button id="search-button"><i class="fas fa-search"></i></button>
+      </div>
+      <div id="search-results"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Script spécifique à la page de contact
+    document.addEventListener('DOMContentLoaded', function() {
+      // Gestion du formulaire de contact
+      const contactForm = document.getElementById('contact-form');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Simuler l'envoi du formulaire
+          const name = document.getElementById('name').value;
+          const email = document.getElementById('email').value;
+          const subject = document.getElementById('subject').value;
+          const message = document.getElementById('message').value;
+          
+          // Vérifier que tous les champs sont remplis
+          if (name && email && subject && message) {
+            // Afficher une notification de succès
+            showNotification('Votre message a été envoyé avec succès. Nous vous répondrons dans les plus brefs délais.', 'success');
+            
+            // Réinitialiser le formulaire
+            contactForm.reset();
+          } else {
+            showNotification('Veuillez remplir tous les champs du formulaire.', 'error');
+          }
+        });
+      }
+      
+      // Gestion des FAQ
+      const faqQuestions = document.querySelectorAll('.faq-question');
+      if (faqQuestions) {
+        faqQuestions.forEach(question => {
+          question.addEventListener('click', function() {
+            // Toggle la classe active
+            this.parentElement.classList.toggle('active');
+            
+            // Toggle l'affichage de la réponse
+            const answer = this.nextElementSibling;
+            if (answer.style.maxHeight) {
+              answer.style.maxHeight = null;
+            } else {
+              answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
+          });
+        });
+      }
+      
+      // Fonction pour afficher une notification (reprise du script.js)
+      function showNotification(message, type = 'success') {
+        // Créer l'élément de notification
+        const notification = document.createElement('div');
+        notification.className = `notification ${type}`;
+        notification.textContent = message;
+        
+        // Ajouter au DOM
+        document.body.appendChild(notification);
+        
+        // Afficher la notification
+        setTimeout(() => {
+          notification.classList.add('show');
+        }, 10);
+        
+        // Supprimer après 3 secondes
+        setTimeout(() => {
+          notification.classList.remove('show');
+          
+          setTimeout(() => {
+            document.body.removeChild(notification);
+          }, 300);
+        }, 3000);
+      }
+      
+      // Fonctions pour les modals
+      window.showLoginModal = function() {
+        document.getElementById('login-modal').style.display = 'flex';
+      };
+      
+      window.showRegisterTab = function() {
+        document.getElementById('login-modal').style.display = 'flex';
+        
+        // Activer l'onglet d'inscription
+        document.querySelectorAll('.modal-tab').forEach(tab => tab.classList.remove('active'));
+        document.querySelectorAll('.modal-panel').forEach(panel => panel.classList.remove('active'));
+        
+        document.querySelector('.modal-tab[data-tab="register"]').classList.add('active');
+        document.getElementById('register-panel').classList.add('active');
+      };
+    });
+  </script>
 </body>
 </html>

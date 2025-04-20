@@ -3,432 +3,673 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoShop - Produits écologiques</title>
+  <title>EcoShop - Produits écologiques et durables</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <!-- Navigation -->
   <nav class="navbar">
-      <div class="container">
-          <a href="index.html" class="logo">
-              <i class="fas fa-leaf"></i>
-              <span>EcoShop</span>
-          </a>
-          <ul class="nav-links">
-              <li><a href="index.html" class="active">Accueil</a></li>
-              <li><a href="produits.html">Produits</a></li>
-              <li><a href="#">Durabilité</a></li>
-              <li><a href="#">Contact</a></li>
-          </ul>
-          <div class="nav-icons">
-              <a href="#" id="search-icon"><i class="fas fa-search"></i></a>
-              <a href="#" id="profile-icon"><i class="fas fa-user"></i></a>
-              <a href="#" id="cart-icon" class="cart-icon">
-                  <i class="fas fa-shopping-cart"></i>
-                  <span class="cart-count">0</span>
-              </a>
-              <button class="theme-toggle">
-                  <i class="fas fa-moon"></i>
-              </button>
-          </div>
-          <button class="menu-toggle">
-              <i class="fas fa-bars"></i>
-          </button>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-leaf"></i> EcoShop
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a href="durabilite.html">Durabilité</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-icons">
+        <button class="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
+        <a href="#" id="search-icon">
+          <i class="fas fa-search"></i>
+        </a>
+        <a href="#" id="profile-icon">
+          <i class="fas fa-user"></i>
+        </a>
+        <a href="#" id="cart-icon" class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </a>
+		<a href="produits.html#maison">Maison</a>
+        <a href="produits.html#mode">Mode éthique</a>
+        <a href="produits.html#cosmetiques">Cosmétiques naturels</a>
+        <a href="produits.html#alimentation">Alimentation bio</a>
+        <button class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
+    </div>
   </nav>
 
-  <!-- Bannière principale -->
+  <!-- Hero Section -->
   <section class="hero">
-      <div class="container">
-          <h1>Des produits écologiques pour un avenir durable</h1>
-          <p>Découvrez notre sélection de produits respectueux de l'environnement</p>
-          <div class="hero-buttons">
-              <a href="produits.html" class="btn btn-primary">Voir les produits</a>
-              <a href="#" class="btn btn-outline">En savoir plus</a>
-          </div>
+    <div class="container">
+      <h1>Des produits écologiques pour un avenir durable</h1>
+      <p>Découvrez notre sélection de produits respectueux de l'environnement pour un mode de vie plus responsable.</p>
+      <div class="hero-buttons">
+        <a href="produits.html" class="btn btn-primary">Découvrir nos produits</a>
+        <a href="durabilite.html" class="btn btn-outline">Notre engagement</a>
       </div>
+    </div>
+  </section>
+   <!-- ✅ Image ajoutée ici -->
+    <div class="hero-image">
+      <img src="images/produits-ecologiques.jpg" alt="Produits écologiques" />
+    </div>
   </section>
 
-  <!-- Produits vedettes -->
-  <section class="featured">
-      <div class="container">
-          <h2 class="section-title">Produits vedettes</h2>
-          <p class="section-subtitle">Notre sélection de produits écologiques populaires</p>
-          
-          <div class="products-grid" id="featured-products">
-              <!-- Les produits seront ajoutés dynamiquement via JavaScript -->
-          </div>
-          
-          <div class="center">
-              <a href="produits.html" class="btn btn-outline">Voir tous les produits</a>
-          </div>
+  <!-- Featured Products -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Produits populaires</h2>
+      <div class="products-grid" id="featured-products">
+        <!-- Les produits seront chargés dynamiquement via JavaScript -->
       </div>
+      <div class="text-center">
+        <a href="produits.html" class="btn btn-outline">Voir tous les produits</a>
+      </div>
+    </div>
   </section>
 
-  <!-- Score de durabilité -->
-  <section class="sustainability">
-      <div class="container">
-          <div class="sustainability-content">
-              <div class="sustainability-text">
-                  <h2>Notre score de durabilité</h2>
-                  <p>Nous évaluons chaque produit selon plusieurs critères environnementaux pour vous aider à faire des choix éclairés.</p>
-                  <ul class="eco-list">
-                      <li><i class="fas fa-check"></i> Empreinte carbone</li>
-                      <li><i class="fas fa-check"></i> Matériaux recyclés</li>
-                      <li><i class="fas fa-check"></i> Emballage écologique</li>
-                      <li><i class="fas fa-check"></i> Production éthique</li>
-                  </ul>
-                  <a href="#" class="btn btn-primary">En savoir plus</a>
-              </div>
-              <div class="sustainability-card">
-                  <h3>Guide de durabilité</h3>
-                  <div class="tabs">
-                      <div class="tab-buttons">
-                          <button class="tab-btn active" data-tab="materials">Matériaux</button>
-                          <button class="tab-btn" data-tab="carbon">Carbone</button>
-                          <button class="tab-btn" data-tab="packaging">Emballage</button>
-                          <button class="tab-btn" data-tab="ethics">Éthique</button>
-                      </div>
-                      <div class="tab-content">
-                          <div class="tab-panel active" id="materials">
-                              <h4>Matériaux durables</h4>
-                              <p>Nous privilégions les produits fabriqués à partir de matériaux recyclés, biodégradables ou renouvelables.</p>
-                              <div class="score-list">
-                                  <div class="score-item">
-                                      <span>Matériaux recyclés</span>
-                                      <div class="score-bar">
-                                          <div class="score-fill" style="width: 90%"></div>
-                                      </div>
-                                      <span>90%</span>
-                                  </div>
-                                  <div class="score-item">
-                                      <span>Matériaux biodégradables</span>
-                                      <div class="score-bar">
-                                          <div class="score-fill" style="width: 75%"></div>
-                                      </div>
-                                      <span>75%</span>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="tab-panel" id="carbon">
-                              <h4>Empreinte carbone</h4>
-                              <p>Nous évaluons l'empreinte carbone de chaque produit tout au long de son cycle de vie.</p>
-                              <div class="impact-scale">
-                                  <div class="impact-labels">
-                                      <span>Faible impact</span>
-                                      <span>Fort impact</span>
-                                  </div>
-                                  <div class="impact-bar"></div>
-                              </div>
-                          </div>
-                          <div class="tab-panel" id="packaging">
-                              <h4>Emballage écologique</h4>
-                              <p>Nous privilégions les produits avec un emballage minimal, recyclable ou biodégradable.</p>
-                              <div class="score-list">
-                                  <div class="score-item">
-                                      <span>Sans plastique</span>
-                                      <div class="score-bar">
-                                          <div class="score-fill" style="width: 85%"></div>
-                                      </div>
-                                      <span>85%</span>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="tab-panel" id="ethics">
-                              <h4>Production éthique</h4>
-                              <p>Nous vérifions que les produits sont fabriqués dans des conditions de travail équitables.</p>
-                              <div class="score-list">
-                                  <div class="score-item">
-                                      <span>Commerce équitable</span>
-                                      <div class="score-bar">
-                                          <div class="score-fill" style="width: 95%"></div>
-                                      </div>
-                                      <span>95%</span>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-
-  <!-- Catégories -->
+  <!-- Categories -->
   <section class="categories">
-      <div class="container">
-          <h2 class="section-title">Nos catégories</h2>
-          <div class="categories-grid">
-              <a href="produits.html" class="category-card">
-                  <img src="https://via.placeholder.com/300" alt="Maison">
-                  <div class="category-overlay">
-                      <h3>Maison</h3>
-                  </div>
-              </a>
-              <a href="produits.html" class="category-card">
-                  <img src="https://via.placeholder.com/300" alt="Mode éthique">
-                  <div class="category-overlay">
-                      <h3>Mode éthique</h3>
-                  </div>
-              </a>
-              <a href="produits.html" class="category-card">
-                  <img src="https://via.placeholder.com/300" alt="Cosmétiques naturels">
-                  <div class="category-overlay">
-                      <h3>Cosmétiques naturels</h3>
-                  </div>
-              </a>
-              <a href="produits.html" class="category-card">
-                  <img src="https://via.placeholder.com/300" alt="Alimentation bio">
-                  <div class="category-overlay">
-                      <h3>Alimentation bio</h3>
-                  </div>
-              </a>
+    <div class="container">
+      <h2 class="section-title">Nos catégories</h2>
+      <div class="categories-grid">
+        <a href="produits.html" class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-home"></i>
           </div>
+          <h3>Maison</h3>
+          <p>Produits écologiques pour votre intérieur</p>
+        </a>
+        <a href="produits.html" class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-tshirt"></i>
+          </div>
+          <h3>Mode éthique</h3>
+          <p>Vêtements et accessoires durables</p>
+        </a>
+        <a href="produits.html" class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-spa"></i>
+          </div>
+          <h3>Cosmétiques naturels</h3>
+          <p>Soins personnels sans produits chimiques</p>
+        </a>
+        <a href="produits.html" class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-apple-alt"></i>
+          </div>
+          <h3>Alimentation bio</h3>
+          <p>Produits alimentaires biologiques</p>
+        </a>
       </div>
+    </div>
+  </section>
+
+  <!-- Sustainability -->
+  <section class="sustainability">
+    <div class="container">
+      <h2 class="section-title">Notre engagement pour la durabilité</h2>
+      <div class="tabs">
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="materials">Matériaux</button>
+          <button class="tab-btn" data-tab="production">Production</button>
+          <button class="tab-btn" data-tab="packaging">Emballage</button>
+        </div>
+        <div class="tab-panels">
+          <div class="tab-panel active" id="materials">
+            <div class="tab-content">
+              <div class="tab-text">
+                <h3>Des matériaux respectueux de l'environnement</h3>
+                <p>Nous sélectionnons rigoureusement des matériaux durables, recyclés ou biodégradables pour tous nos produits. Notre objectif est de réduire l'impact environnemental tout en garantissant qualité et longévité.</p>
+                <ul class="eco-list">
+                  <li><i class="fas fa-check-circle"></i> Matières premières renouvelables</li>
+                  <li><i class="fas fa-check-circle"></i> Fibres naturelles et biologiques</li>
+                  <li><i class="fas fa-check-circle"></i> Matériaux recyclés et upcyclés</li>
+                  <li><i class="fas fa-check-circle"></i> Sans substances nocives</li>
+                </ul>
+                <a href="durabilite.html" class="btn btn-outline">En savoir plus</a>
+              </div>
+              <div class="tab-image">
+                <img src="https://via.placeholder.com/500x300" alt="Matériaux durables">
+              </div>
+            </div>
+          </div>
+          <div class="tab-panel" id="production">
+            <div class="tab-content">
+              <div class="tab-text">
+                <h3>Production éthique et responsable</h3>
+                <p>Nous travaillons exclusivement avec des fabricants qui respectent des normes éthiques strictes et qui s'engagent à réduire leur impact environnemental. Nous privilégions les circuits courts et les productions locales.</p>
+                <ul class="eco-list">
+                  <li><i class="fas fa-check-circle"></i> Conditions de travail équitables</li>
+                  <li><i class="fas fa-check-circle"></i> Réduction des émissions de CO2</li>
+                  <li><i class="fas fa-check-circle"></i> Économie d'eau et d'énergie</li>
+                  <li><i class="fas fa-check-circle"></i> Traçabilité de la chaîne d'approvisionnement</li>
+                </ul>
+                <a href="durabilite.html" class="btn btn-outline">En savoir plus</a>
+              </div>
+              <div class="tab-image">
+                <img src="https://via.placeholder.com/500x300" alt="Production éthique">
+              </div>
+            </div>
+          </div>
+          <div class="tab-panel" id="packaging">
+            <div class="tab-content">
+              <div class="tab-text">
+                <h3>Emballages éco-responsables</h3>
+                <p>Nous réduisons au maximum les emballages et utilisons exclusivement des matériaux recyclés, recyclables ou compostables. Notre objectif est de tendre vers le zéro déchet.</p>
+                <ul class="eco-list">
+                  <li><i class="fas fa-check-circle"></i> Emballages minimalistes</li>
+                  <li><i class="fas fa-check-circle"></i> Papier et carton recyclés</li>
+                  <li><i class="fas fa-check-circle"></i> Alternatives au plastique</li>
+                  <li><i class="fas fa-check-circle"></i> Encres végétales</li>
+                </ul>
+                <a href="durabilite.html" class="btn btn-outline">En savoir plus</a>
+              </div>
+              <div class="tab-image">
+                <img src="https://via.placeholder.com/500x300" alt="Emballages éco-responsables">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">Ce que disent nos clients</h2>
+      <div class="testimonials-slider">
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <p>"J'ai découvert EcoShop il y a quelques mois et je suis ravie de la qualité des produits. Je recommande particulièrement les cosmétiques naturels qui ont transformé ma routine beauté."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://via.placeholder.com/60x60" alt="Sophie M.">
+            <div>
+              <h4>Sophie M.</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <p>"Les produits pour la maison sont excellents, efficaces et vraiment écologiques. Le service client est également impeccable. Je suis un client fidèle depuis plus d'un an maintenant."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://via.placeholder.com/60x60" alt="Thomas L.">
+            <div>
+              <h4>Thomas L.</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <p>"J'apprécie particulièrement la transparence d'EcoShop sur l'origine des produits et leur impact environnemental. C'est rassurant de savoir exactement ce qu'on achète."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://via.placeholder.com/60x60" alt="Marie D.">
+            <div>
+              <h4>Marie D.</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pages Highlight Section -->
+  <section class="pages-highlight">
+    <div class="container">
+      <h2 class="section-title">Découvrez plus sur EcoShop</h2>
+      <div class="highlight-cards">
+        <div class="highlight-card">
+          <div class="highlight-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h3>Notre engagement pour la durabilité</h3>
+          <p>Découvrez comment nous sélectionnons nos produits et contribuons à un avenir plus durable.</p>
+          <a href="durabilite.html" class="btn btn-outline">En savoir plus</a>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">
+            <i class="fas fa-comments"></i>
+          </div>
+          <h3>Contactez-nous</h3>
+          <p>Des questions, des suggestions ou besoin d'aide ? Notre équipe est là pour vous répondre.</p>
+          <a href="contact.html" class="btn btn-outline">Nous contacter</a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Newsletter -->
   <section class="newsletter">
-      <div class="container">
-          <h2>Restez informé</h2>
-          <p>Inscrivez-vous à notre newsletter pour recevoir nos dernières nouveautés et conseils écologiques</p>
-          <form class="newsletter-form">
-              <input type="email" placeholder="Votre adresse email" required>
-              <button type="submit" class="btn btn-primary">S'inscrire</button>
-          </form>
-      </div>
+    <div class="container">
+      <h2>Restez vous informé</h2>
+      <p>Inscrivez-vous à notre newsletter pour recevoir nos dernières actualités et offres spéciales.</p>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-      <div class="container">
-          <div class="footer-content">
-              <div class="footer-logo">
-                  <i class="fas fa-leaf"></i>
-                  <span>EcoShop</span>
-              </div>
-              <div class="footer-links">
-                  <div class="footer-column">
-                      <h3>Produits</h3>
-                      <ul>
-                          <li><a href="#">Maison</a></li>
-                          <li><a href="#">Mode éthique</a></li>
-                          <li><a href="#">Cosmétiques naturels</a></li>
-                          <li><a href="#">Alimentation bio</a></li>
-                      </ul>
-                  </div>
-                  <div class="footer-column">
-                      <h3>À propos</h3>
-                      <ul>
-                          <li><a href="#">Notre mission</a></li>
-                          <li><a href="#">Durabilité</a></li>
-                          <li><a href="#">Blog</a></li>
-                          <li><a href="#">Nous contacter</a></li>
-                      </ul>
-                  </div>
-                  <div class="footer-column">
-                      <h3>Aide</h3>
-                      <ul>
-                          <li><a href="#">FAQ</a></li>
-                          <li><a href="#">Livraison</a></li>
-                          <li><a href="#">Retours</a></li>
-                          <li><a href="#" id="footer-account">Mon compte</a></li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="footer-social">
-                  <h3>Suivez-nous</h3>
-                  <div class="social-icons">
-                      <a href="#"><i class="fab fa-facebook-f"></i></a>
-                      <a href="#"><i class="fab fa-instagram"></i></a>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
-                      <a href="#"><i class="fab fa-pinterest"></i></a>
-                  </div>
-              </div>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo-container">
+          <a href="index.html" class="footer-logo">
+            <i class="fas fa-leaf"></i> EcoShop
+          </a>
+          <p>Votre boutique en ligne de produits écologiques et durables.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="produits.html">Produits</a></li>
+              <li><a href="durabilite.html">Durabilité</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
           </div>
-          <div class="footer-bottom">
-              <p>&copy; 2023 EcoShop. Tous droits réservés.</p>
-              <div class="footer-legal">
-                  <a href="#">Mentions légales</a>
-                  <a href="#">Politique de confidentialité</a>
-                  <a href="#">Conditions d'utilisation</a>
-              </div>
+          <div class="footer-column">
+            <h3>Catégories</h3>
+            <ul>
+              <li><a href="produits.html">Maison</a></li>
+              <li><a href="produits.html">Mode éthique</a></li>
+              <li><a href="produits.html">Cosmétiques naturels</a></li>
+              <li><a href="produits.html">Alimentation bio</a></li>
+            </ul>
           </div>
+          <div class="footer-column">
+            <h3>Mon compte</h3>
+            <ul>
+              <li><a href="#" id="footer-account">Mon profil</a></li>
+              <li><a href="#">Mes commandes</a></li>
+              <li><a href="#">Ma liste d'envies</a></li>
+              <li><a href="#">Aide</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-social">
+          <h3>Suivez-nous</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
       </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 EcoShop. Tous droits réservés.</p>
+        <div class="footer-legal">
+          <a href="#">Conditions générales</a>
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">Mentions légales</a>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <!-- Modals -->
+  <!-- Login Modal -->
   <div class="modal" id="login-modal">
-      <div class="modal-content">
-          <span class="close-modal">&times;</span>
-          <div class="modal-tabs">
-              <button class="modal-tab active" data-tab="login">Connexion</button>
-              <button class="modal-tab" data-tab="register">Inscription</button>
-          </div>
-          <div class="modal-body">
-              <div class="modal-panel active" id="login-panel">
-                  <h2>Connexion</h2>
-                  <form id="login-form">
-                      <div class="form-group">
-                          <label for="login-email">Email</label>
-                          <input type="email" id="login-email" required>
-                      </div>
-                      <div class="form-group">
-                          <label for="login-password">Mot de passe</label>
-                          <input type="password" id="login-password" required>
-                      </div>
-                      <div class="form-group">
-                          <button type="submit" class="btn btn-primary btn-block">Se connecter</button>
-                      </div>
-                      <div class="form-footer">
-                          <a href="#" class="forgot-password">Mot de passe oublié?</a>
-                      </div>
-                  </form>
-              </div>
-              <div class="modal-panel" id="register-panel">
-                  <h2>Inscription</h2>
-                  <form id="register-form">
-                      <div class="form-group">
-                          <label for="register-name">Nom complet</label>
-                          <input type="text" id="register-name" required>
-                      </div>
-                      <div class="form-group">
-                          <label for="register-email">Email</label>
-                          <input type="email" id="register-email" required>
-                      </div>
-                      <div class="form-group">
-                          <label for="register-password">Mot de passe</label>
-                          <input type="password" id="register-password" required>
-                      </div>
-                      <div class="form-group">
-                          <label for="register-confirm">Confirmer le mot de passe</label>
-                          <input type="password" id="register-confirm" required>
-                      </div>
-                      <div class="form-group">
-                          <button type="submit" class="btn btn-primary btn-block">S'inscrire</button>
-                      </div>
-                  </form>
-              </div>
-          </div>
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Mon compte</h2>
+      <div class="modal-tabs">
+        <button class="modal-tab active" data-tab="login">Connexion</button>
+        <button class="modal-tab" data-tab="register">Inscription</button>
       </div>
+      <div class="modal-panel active" id="login-panel">
+        <form id="login-form">
+          <div class="form-group">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" required>
+          </div>
+          <div class="form-group">
+            <label for="login-password">Mot de passe</label>
+            <input type="password" id="login-password" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Se connecter</button>
+          <div class="form-footer">
+            <a href="#" class="forgot-password">Mot de passe oublié ?</a>
+          </div>
+        </form>
+      </div>
+      <div class="modal-panel" id="register-panel">
+        <form id="register-form">
+          <div class="form-group">
+            <label for="register-name">Nom complet</label>
+            <input type="text" id="register-name" required>
+          </div>
+          <div class="form-group">
+            <label for="register-email">Email</label>
+            <input type="email" id="register-email" required>
+          </div>
+          <div class="form-group">
+            <label for="register-password">Mot de passe</label>
+            <input type="password" id="register-password" required>
+          </div>
+          <div class="form-group">
+            <label for="register-confirm">Confirmer le mot de passe</label>
+            <input type="password" id="register-confirm" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">S'inscrire</button>
+        </form>
+      </div>
+    </div>
   </div>
 
+  <!-- Cart Modal -->
   <div class="modal" id="cart-modal">
-      <div class="modal-content">
-          <span class="close-modal">&times;</span>
-          <h2>Votre panier</h2>
-          <div id="cart-items">
-              <!-- Les articles du panier seront ajoutés ici -->
-          </div>
-          <div id="cart-summary">
-              <div class="cart-total">
-                  <span>Total:</span>
-                  <span id="cart-total-price">0.00 €</span>
-              </div>
-              <div class="cart-actions">
-                  <button class="btn btn-outline" id="clear-cart">Vider le panier</button>
-                  <button class="btn btn-primary" id="checkout">Commander</button>
-              </div>
-          </div>
-          <div id="cart-empty" class="hidden">
-              <p>Votre panier est vide</p>
-              <a href="produits.html" class="btn btn-outline">Voir les produits</a>
-          </div>
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Mon panier</h2>
+      <div id="cart-empty">
+        <p>Votre panier est vide.</p>
+        <a href="produits.html" class="btn btn-outline">Découvrir nos produits</a>
       </div>
+      <div id="cart-items"></div>
+      <div id="cart-summary" class="hidden">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cart-total-price">0.00 €</span>
+        </div>
+        <div class="cart-actions">
+          <button id="clear-cart" class="btn btn-outline">Vider le panier</button>
+          <button id="checkout" class="btn btn-primary">Commander</button>
+        </div>
+      </div>
+    </div>
   </div>
 
+  <!-- Profile Modal -->
   <div class="modal" id="profile-modal">
-      <div class="modal-content">
-          <span class="close-modal">&times;</span>
-          <div id="profile-logged-in" class="hidden">
-              <h2>Mon compte</h2>
-              <div class="profile-info">
-                  <div class="profile-header">
-                      <div class="profile-avatar">
-                          <i class="fas fa-user-circle"></i>
-                      </div>
-                      <div class="profile-name">
-                          <h3 id="profile-name-display">Nom d'utilisateur</h3>
-                          <p id="profile-email-display">email@exemple.com</p>
-                      </div>
-                  </div>
-                  <div class="profile-menu">
-                      <a href="#" class="profile-menu-item">
-                          <i class="fas fa-shopping-bag"></i>
-                          <span>Mes commandes</span>
-                      </a>
-                      <a href="#" class="profile-menu-item">
-                          <i class="fas fa-heart"></i>
-                          <span>Mes favoris</span>
-                      </a>
-                      <a href="#" class="profile-menu-item">
-                          <i class="fas fa-map-marker-alt"></i>
-                          <span>Mes adresses</span>
-                      </a>
-                      <a href="#" class="profile-menu-item">
-                          <i class="fas fa-cog"></i>
-                          <span>Paramètres</span>
-                      </a>
-                      <a href="#" class="profile-menu-item" id="logout-btn">
-                          <i class="fas fa-sign-out-alt"></i>
-                          <span>Déconnexion</span>
-                      </a>
-                  </div>
-              </div>
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div id="profile-logged-in" class="hidden">
+        <div class="profile-header">
+          <div class="profile-avatar">
+            <i class="fas fa-user-circle"></i>
           </div>
-          <div id="profile-logged-out">
-              <h2>Mon compte</h2>
-              <p>Connectez-vous pour accéder à votre compte</p>
-              <button class="btn btn-primary btn-block" id="profile-login-btn">Se connecter</button>
-              <p class="profile-register">Vous n'avez pas de compte? <a href="#" id="profile-register-btn">S'inscrire</a></p>
+          <div class="profile-name">
+            <h3 id="profile-name-display">Nom d'utilisateur</h3>
+            <p id="profile-email-display">email@example.com</p>
           </div>
+        </div>
+        <div class="profile-menu">
+          <a href="#" class="profile-menu-item">
+            <i class="fas fa-shopping-bag"></i>
+            <span>Mes commandes</span>
+          </a>
+          <a href="#" class="profile-menu-item">
+            <i class="fas fa-heart"></i>
+            <span>Ma liste d'envies</span>
+          </a>
+          <a href="#" class="profile-menu-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Mes adresses</span>
+          </a>
+          <a href="#" class="profile-menu-item">
+            <i class="fas fa-cog"></i>
+            <span>Paramètres du compte</span>
+          </a>
+          <a href="#" id="logout-btn" class="profile-menu-item">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Déconnexion</span>
+          </a>
+        </div>
       </div>
+      <div id="profile-logged-out">
+        <h2>Mon compte</h2>
+        <p>Connectez-vous pour accéder à votre compte et gérer vos commandes.</p>
+        <button class="btn btn-primary btn-block" onclick="showLoginModal()">Se connecter</button>
+        <div class="profile-register">
+          <p>Vous n'avez pas de compte ? <a href="#" onclick="showRegisterTab()">Inscrivez-vous</a></p>
+        </div>
+      </div>
+    </div>
   </div>
 
+  <!-- Add to Cart Modal -->
   <div class="modal" id="add-to-cart-modal">
-      <div class="modal-content">
-          <span class="close-modal">&times;</span>
-          <h2>Ajouter au panier</h2>
-          <div id="add-to-cart-product-info">
-              <!-- Informations du produit à ajouter -->
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Ajouter au panier</h2>
+      <div id="add-to-cart-product-info"></div>
+      <form id="add-to-cart-form">
+        <div class="form-group">
+          <label for="product-quantity">Quantité</label>
+          <div class="quantity-selector">
+            <button type="button" id="decrease-quantity" class="quantity-btn">-</button>
+            <input type="number" id="product-quantity" value="1" min="1" max="10">
+            <button type="button" id="increase-quantity" class="quantity-btn">+</button>
           </div>
-          <form id="add-to-cart-form">
-              <div class="form-group">
-                  <label for="product-quantity">Quantité</label>
-                  <div class="quantity-selector">
-                      <button type="button" class="quantity-btn" id="decrease-quantity">-</button>
-                      <input type="number" id="product-quantity" value="1" min="1" max="10">
-                      <button type="button" class="quantity-btn" id="increase-quantity">+</button>
-                  </div>
-              </div>
-              <div class="form-group">
-                  <label for="product-notes">Notes spéciales (optionnel)</label>
-                  <textarea id="product-notes" rows="2" placeholder="Instructions spéciales pour ce produit"></textarea>
-              </div>
-              <div class="form-group">
-                  <button type="submit" class="btn btn-primary btn-block">Ajouter au panier</button>
-              </div>
-          </form>
-      </div>
+        </div>
+        <div class="form-group">
+          <label for="product-notes">Notes spéciales (optionnel)</label>
+          <textarea id="product-notes" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Ajouter au panier</button>
+      </form>
+    </div>
   </div>
 
+  <!-- Search Overlay -->
   <div class="search-overlay" id="search-overlay">
-      <div class="search-container">
-          <div class="search-header">
-              <h2>Rechercher</h2>
-              <button class="close-search">&times;</button>
-          </div>
-          <div class="search-form">
-              <input type="text" id="search-input" placeholder="Rechercher des produits...">
-              <button id="search-button"><i class="fas fa-search"></i></button>
-          </div>
-          <div class="search-results" id="search-results">
-              <!-- Les résultats de recherche seront ajoutés ici -->
-          </div>
+    <div class="search-container">
+      <div class="search-header">
+        <h2>Rechercher</h2>
+        <button class="close-search">&times;</button>
       </div>
+      <div class="search-form">
+        <input type="text" id="search-input" placeholder="Que recherchez-vous ?">
+        <button id="search-button"><i class="fas fa-search"></i></button>
+      </div>
+      <div id="search-results"></div>
+    </div>
   </div>
 
   <script src="script.js"></script>
+  <script>
+    // Fonctions pour les modals
+    window.showLoginModal = function() {
+      document.getElementById('login-modal').style.display = 'flex';
+    };
+    
+    window.showRegisterTab = function() {
+      document.getElementById('login-modal').style.display = 'flex';
+      
+      // Activer l'onglet d'inscription
+      document.querySelectorAll('.modal-tab').forEach(tab => tab.classList.remove('active'));
+      document.querySelectorAll('.modal-panel').forEach(panel => panel.classList.remove('active'));
+      
+      document.querySelector('.modal-tab[data-tab="register"]').classList.add('active');
+      document.getElementById('register-panel').classList.add('active');
+    };
+  </script>
+  <!-- Payment Modal -->
+<div id="payment-modal" class="modal">
+  <div class="modal-content payment-modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>Finaliser votre commande</h2>
+    
+    <div class="payment-steps">
+      <div class="payment-step active">
+        <span class="step-number">1</span>
+        <span class="step-name">Livraison</span>
+      </div>
+      <div class="payment-step">
+        <span class="step-number">2</span>
+        <span class="step-name">Paiement</span>
+      </div>
+      <div class="payment-step">
+        <span class="step-number">3</span>
+        <span class="step-name">Confirmation</span>
+      </div>
+    </div>
+    
+    <div class="payment-panels">
+      <!-- Étape 1: Informations de livraison -->
+      <div class="payment-panel active" id="shipping-panel">
+        <h3>Adresse de livraison</h3>
+        <form id="shipping-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">Prénom</label>
+              <input type="text" id="first-name" required>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Nom</label>
+              <input type="text" id="last-name" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="address">Adresse</label>
+            <input type="text" id="address" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="postal-code">Code postal</label>
+              <input type="text" id="postal-code" required>
+            </div>
+            <div class="form-group">
+              <label for="city">Ville</label>
+              <input type="text" id="city" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="country">Pays</label>
+            <select id="country" required>
+              <option value="">Sélectionnez un pays</option>
+              <option value="FR">France</option>
+              <option value="BE">Belgique</option>
+              <option value="CH">Suisse</option>
+              <option value="CA">Canada</option>
+              <option value="LU">Luxembourg</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="phone">Téléphone</label>
+            <input type="tel" id="phone" required>
+          </div>
+          <div class="form-actions">
+            <button type="button" class="btn btn-outline" id="cancel-payment">Annuler</button>
+            <button type="submit" class="btn btn-primary">Continuer vers le paiement</button>
+          </div>
+        </form>
+      </div>
+      
+      <!-- Étape 2: Informations de paiement -->
+      <div class="payment-panel" id="payment-info-panel">
+        <h3>Informations de paiement</h3>
+        <form id="payment-form">
+          <div class="form-group">
+            <label for="card-holder">Titulaire de la carte</label>
+            <input type="text" id="card-holder" required>
+          </div>
+          <div class="form-group">
+            <label for="card-number">Numéro de carte</label>
+            <div class="card-input-container">
+              <input type="text" id="card-number" placeholder="1234 5678 9012 3456" maxlength="19" required>
+              <div class="card-icons">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="expiry-date">Date d'expiration</label>
+              <input type="text" id="expiry-date" placeholder="MM/AA" maxlength="5" required>
+            </div>
+            <div class="form-group">
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" placeholder="123" maxlength="3" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="checkbox-container">
+              <input type="checkbox" id="save-card">
+              <span class="checkmark"></span>
+              Sauvegarder cette carte pour mes prochains achats
+            </label>
+          </div>
+          <div class="payment-summary">
+            <h4>Récapitulatif de la commande</h4>
+            <div class="summary-row">
+              <span>Sous-total:</span>
+              <span id="payment-subtotal">0.00 €</span>
+            </div>
+            <div class="summary-row">
+              <span>Livraison:</span>
+              <span id="payment-shipping">4.99 €</span>
+            </div>
+            <div class="summary-row">
+              <span>TVA (20%):</span>
+              <span id="payment-tax">0.00 €</span>
+            </div>
+            <div class="summary-row total">
+              <span>Total:</span>
+              <span id="payment-total">0.00 €</span>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="button" class="btn btn-outline" id="back-to-shipping">Retour</button>
+            <button type="submit" class="btn btn-primary">Confirmer le paiement</button>
+          </div>
+        </form>
+      </div>
+      
+      <!-- Étape 3: Confirmation -->
+      <div class="payment-panel" id="confirmation-panel">
+        <div class="confirmation-content">
+          <div class="confirmation-icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <h3>Commande confirmée !</h3>
+          <p>Merci pour votre achat. Votre commande a été traitée avec succès.</p>
+          <div class="order-details">
+            <p><strong>Numéro de commande:</strong> <span id="order-number">ECO-12345</span></p>
+            <p><strong>Date:</strong> <span id="order-date">01/01/2023</span></p>
+            <p>Un email de confirmation a été envoyé à <span id="order-email">email@example.com</span></p>
+          </div>
+          <div class="form-actions">
+            <button type="button" class="btn btn-primary" id="finish-order">Retour à la boutique</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>

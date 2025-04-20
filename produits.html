@@ -19,8 +19,8 @@
           <ul class="nav-links">
               <li><a href="index.html">Accueil</a></li>
               <li><a href="produits.html" class="active">Produits</a></li>
-              <li><a href="#">Durabilité</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="durabilite.html">Durabilité</a></li>
+                <li><a href="contact.html">Contact</a></li>
           </ul>
           <div class="nav-icons">
               <a href="#" id="search-icon"><i class="fas fa-search"></i></a>
@@ -136,9 +136,9 @@
                   
                   <!-- Catégories de produits -->
                   <div class="product-categories">
-                      <div class="category-section" id="maison-category">
+                      <div class="category-section" id="maison">
                           <h2 class="category-title">Maison</h2>
-                          <div class="products-grid" id="maison-products">
+                          <div class="products-grid" id="maison-products" value="maison">
                               <!-- Les produits seront ajoutés dynamiquement via JavaScript -->
                           </div>
                           <div class="category-footer">
@@ -146,9 +146,9 @@
                           </div>
                       </div>
                       
-                      <div class="category-section" id="mode-category">
+                      <div class="category-section" id="mode">
                           <h2 class="category-title">Mode éthique</h2>
-                          <div class="products-grid" id="mode-products">
+                          <div class="products-grid" id="mode-products" value="mode">
                               <!-- Les produits seront ajoutés dynamiquement via JavaScript -->
                           </div>
                           <div class="category-footer">
@@ -156,9 +156,9 @@
                           </div>
                       </div>
                       
-                      <div class="category-section" id="cosmetiques-category">
+                      <div class="category-section" id="cosmetiques">
                           <h2 class="category-title">Cosmétiques naturels</h2>
-                          <div class="products-grid" id="cosmetiques-products">
+                          <div class="products-grid" id="cosmetiques-products"value="cosmetiques">
                               <!-- Les produits seront ajoutés dynamiquement via JavaScript -->
                           </div>
                           <div class="category-footer">
@@ -166,9 +166,9 @@
                           </div>
                       </div>
                       
-                      <div class="category-section" id="alimentation-category">
+                      <div class="category-section" id="alimentation">
                           <h2 class="category-title">Alimentation bio</h2>
-                          <div class="products-grid" id="alimentation-products">
+                          <div class="products-grid" id="alimentation-products" value="alimentation">
                               <!-- Les produits seront ajoutés dynamiquement via JavaScript -->
                           </div>
                           <div class="category-footer">
@@ -193,16 +193,16 @@
                   <div class="footer-column">
                       <h3>Produits</h3>
                       <ul>
-                          <li><a href="#">Maison</a></li>
-                          <li><a href="#">Mode éthique</a></li>
-                          <li><a href="#">Cosmétiques naturels</a></li>
-                          <li><a href="#">Alimentation bio</a></li>
+                          <li><a href="produits.html#maison">Maison</a></li>
+                          <li><a href="produits.html#mode">Mode éthique</a></li>
+                          <li><a href="produits.html#cosmetiques">Cosmétiques naturels</a></li>
+                          <li><a href="produits.html#alimentation">Alimentation bio</a></li>
                       </ul>
                   </div>
                   <div class="footer-column">
                       <h3>À propos</h3>
                       <ul>
-                          <li><a href="#">Notre mission</a></li>
+                          <li><a href="durabilite.html#b1">Notre mission</a></li>
                           <li><a href="#">Durabilité</a></li>
                           <li><a href="#">Blog</a></li>
                           <li><a href="#">Nous contacter</a></li>
@@ -212,8 +212,6 @@
                       <h3>Aide</h3>
                       <ul>
                           <li><a href="#">FAQ</a></li>
-                          <li><a href="#">Livraison</a></li>
-                          <li><a href="#">Retours</a></li>
                           <li><a href="#" id="footer-account">Mon compte</a></li>
                       </ul>
                   </div>
@@ -411,5 +409,6 @@
   </div>
 
   <script src="script.js"></script>
+  
 </body>
 </html>
