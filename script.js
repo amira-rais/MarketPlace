@@ -6,7 +6,7 @@ const products = [
     price: 24.99,
     category: "Maison",
     description: "Bouteille en acier inoxydable, sans BPA, idéale pour réduire les déchets plastiques.",
-    image: "C:\Users\sanar\Desktop\leDernier\bouteille.jpg",
+    image: "images/bouteille.png",
     sustainabilityScore: 95,
     featured: true
   },
@@ -16,7 +16,7 @@ const products = [
     price: 29.99,
     category: "Mode éthique",
     description: "T-shirt fabriqué en coton biologique certifié, teint avec des colorants naturels.",
-    image: "https://via.placeholder.com/300",
+    image: "images/t-shirt1.png",
     sustainabilityScore: 85,
     featured: true
   },
@@ -26,7 +26,7 @@ const products = [
     price: 8.99,
     category: "Cosmétiques naturels",
     description: "Savon artisanal fabriqué à partir d'ingrédients naturels et biologiques, sans emballage plastique.",
-    image: "https://via.placeholder.com/300",
+    image: "images/savon-solide.png",
     sustainabilityScore: 90,
     featured: true
   },
@@ -36,7 +36,7 @@ const products = [
     price: 12.99,
     category: "Mode éthique",
     description: "Sac en coton biologique robuste et durable, parfait pour remplacer les sacs plastiques.",
-    image: "https://via.placeholder.com/300",
+    image: "images/sac1.png",
     sustainabilityScore: 88,
     featured: true
   },
@@ -46,7 +46,7 @@ const products = [
     price: 6.99,
     category: "Maison",
     description: "Brosse à dents écologique avec manche en bambou biodégradable et poils recyclables.",
-    image: "https://via.placeholder.com/300",
+    image: "images/brosse-a-dents.png",
     sustainabilityScore: 92,
     featured: false
   },
@@ -56,7 +56,7 @@ const products = [
     price: 11.99,
     category: "Cosmétiques naturels",
     description: "Shampoing solide sans sulfates ni parabens, emballage zéro déchet.",
-    image: "https://via.placeholder.com/300",
+    image: "images/shampoing.png",
     sustainabilityScore: 94,
     featured: false
   },
@@ -66,7 +66,7 @@ const products = [
     price: 59.99,
     category: "Mode éthique",
     description: "Sac à dos fabriqué à partir de bouteilles plastiques recyclées, résistant à l'eau.",
-    image: "https://via.placeholder.com/300",
+    image: "images/sac3.png",
     sustainabilityScore: 87,
     featured: false
   },
@@ -76,7 +76,7 @@ const products = [
     price: 14.99,
     category: "Maison",
     description: "Lot de 6 pailles en acier inoxydable avec brosse de nettoyage, alternative durable aux pailles jetables.",
-    image: "https://via.placeholder.com/300",
+    image: "images/paille.png",
     sustainabilityScore: 89,
     featured: false
   },
@@ -86,7 +86,7 @@ const products = [
     price: 9.99,
     category: "Alimentation bio",
     description: "Café issu de l'agriculture biologique et du commerce équitable, torréfié artisanalement pour préserver ses arômes.",
-    image: "https://via.placeholder.com/300",
+    image: "images/café.png",
     sustainabilityScore: 91,
     featured: false
   },
@@ -96,7 +96,7 @@ const products = [
     price: 18.99,
     category: "Maison",
     description: "Alternative écologique au film plastique, fabriquée à partir de coton bio et de cire d'abeille.",
-    image: "https://via.placeholder.com/300",
+    image: "images/beeswrap.png",
     sustainabilityScore: 93,
     featured: false
   },
@@ -106,7 +106,7 @@ const products = [
     price: 22.99,
     category: "Cosmétiques naturels",
     description: "Crème hydratante à base d'ingrédients naturels et biologiques, sans conservateurs chimiques.",
-    image: "https://via.placeholder.com/300",
+    image: "images/crème.png",
     sustainabilityScore: 86,
     featured: false
   },
@@ -116,7 +116,7 @@ const products = [
     price: 7.99,
     category: "Alimentation bio",
     description: "Thé vert cultivé sans pesticides, riche en antioxydants et conditionné dans un emballage compostable.",
-    image: "https://via.placeholder.com/300",
+    image: "images/thé.png",
     sustainabilityScore: 90,
     featured: false
   },
@@ -127,7 +127,7 @@ const products = [
     price: 19.99,
     category: "Maison",
     description: "Gourde pliable en silicone alimentaire, sans BPA, pratique pour les déplacements.",
-    image: "https://via.placeholder.com/300",
+    image: "images/gourde.png",
     sustainabilityScore: 88,
     featured: false
   },
@@ -137,7 +137,7 @@ const products = [
     price: 12.99,
     category: "Mode éthique",
     description: "Chaussettes fabriquées à partir de fibres de bambou, naturellement antibactériennes et respirantes.",
-    image: "https://via.placeholder.com/300",
+    image: "images/chaussettes.png",
     sustainabilityScore: 85,
     featured: false
   },
@@ -147,7 +147,7 @@ const products = [
     price: 8.49,
     category: "Cosmétiques naturels",
     description: "Dentifrice solide naturel, sans emballage plastique, pour une hygiène bucco-dentaire écologique.",
-    image: "https://via.placeholder.com/300",
+    image: "images/dentifrice.png",
     sustainabilityScore: 92,
     featured: false
   },
@@ -157,7 +157,7 @@ const products = [
     price: 4.99,
     category: "Alimentation bio",
     description: "Chocolat noir 70% issu de l'agriculture biologique et du commerce équitable.",
-    image: "https://via.placeholder.com/300",
+    image: "images/chocolat.png",
     sustainabilityScore: 89,
     featured: false
   },
@@ -167,7 +167,7 @@ const products = [
     price: 7.99,
     category: "Maison",
     description: "Éponge lavable et réutilisable en fibres naturelles, alternative durable aux éponges jetables.",
-    image: "https://via.placeholder.com/300",
+    image: "images/eponge.png",
     sustainabilityScore: 91,
     featured: false
   },
@@ -177,7 +177,7 @@ const products = [
     price: 34.99,
     category: "Mode éthique",
     description: "Écharpe chaude et douce fabriquée à partir de laine recyclée, teinte avec des colorants naturels.",
-    image: "https://via.placeholder.com/300",
+    image: "images/echape.png",
     sustainabilityScore: 87,
     featured: false
   },
@@ -187,7 +187,7 @@ const products = [
     price: 9.99,
     category: "Cosmétiques naturels",
     description: "Déodorant naturel sans aluminium ni parabens, efficace et respectueux de la peau.",
-    image: "https://via.placeholder.com/300",
+    image: "images/déodorant.png",
     sustainabilityScore: 90,
     featured: false
   },
@@ -197,7 +197,7 @@ const products = [
     price: 12.99,
     category: "Alimentation bio",
     description: "Miel de forêt issu de l'apiculture biologique, récolté dans des zones préservées.",
-    image: "https://via.placeholder.com/300",
+    image: "images/miel.png",
     sustainabilityScore: 93,
     featured: false
   },
@@ -207,7 +207,7 @@ const products = [
     price: 15.99,
     category: "Maison",
     description: "Set de couverts en bambou réutilisables, légers et pratiques pour les déplacements.",
-    image: "https://via.placeholder.com/300",
+    image: "images/couverts.png",
     sustainabilityScore: 89,
     featured: false
   },
@@ -217,7 +217,7 @@ const products = [
     price: 79.99,
     category: "Mode éthique",
     description: "Baskets fabriquées à partir de matériaux recyclés et de caoutchouc naturel.",
-    image: "https://via.placeholder.com/300",
+    image: "images/baskets.png",
     sustainabilityScore: 86,
     featured: false
   },
@@ -227,7 +227,7 @@ const products = [
     price: 8.99,
     category: "Cosmétiques naturels",
     description: "Huile de coco vierge biologique, polyvalente pour la cuisine et les soins corporels.",
-    image: "https://via.placeholder.com/300",
+    image: "images/huile.png",
     sustainabilityScore: 92,
     featured: false
   },
@@ -237,7 +237,7 @@ const products = [
     price: 3.49,
     category: "Alimentation bio",
     description: "Pâtes complètes issues de l'agriculture biologique, riches en fibres et en nutriments.",
-    image: "https://via.placeholder.com/300",
+    image: "images/pates.png",
     sustainabilityScore: 88,
     featured: false
   }

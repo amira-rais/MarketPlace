@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
       price: 29.99,
       category: "Mode éthique",
       description: "T-shirt fabriqué en coton biologique certifié, teint avec des colorants naturels.",
-      image: "https://via.placeholder.com/300",
+      image: "images/t-shirt1.png",
       sustainabilityScore: 85,
       featured: true
     },
